@@ -114,7 +114,7 @@ export default class App extends React.Component{
         <h1>Instragram</h1>
       </div>
       <form className="login-form">
-        <button className="input-form"><span className="icon-fb"><AiFillFacebook size={20}/></span><span>Continue Using Facebook</span></button>
+        <button className="input-form"><span className="icon-fb"><AiFillFacebook size={20}/></span><span>Continue Using your mother</span></button>
         <div className="container-or">
           <div className="line-or"></div>
           <div className="text-or">OR</div>
