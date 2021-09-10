@@ -96,27 +96,7 @@ function LanguageList() {
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <MyComponent person="halo" messages="wowowo"/> */}
-<<<<<<< HEAD
-    {/* <App /> */}
-    {/* <LanguageList /> */}
     <App/>
-    {/* <MyComponent/> */}
-    {/* <button onClick={e => changeLanguage('cn')}>    
-=======
-    <MyComponent/>
-
-    <button onClick={() => changeLanguage('cn')}>    
->>>>>>> parent of ef046f9 (Update index.js)
-    <Trans i18nKey="cn_lang">
-      chinese
-    </Trans>
-    </button>
-    <button onClick={() => changeLanguage('bm')}>
-    <Trans i18nKey="bm_lang">
-      melay
-    </Trans>
-    </button> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
