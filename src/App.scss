@@ -1,0 +1,128 @@
+// declare and extend
+%message-shared {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+$font-size-title : 16pt;
+
+main{
+  nav{
+    // margin: 6px 16px 6px;
+
+      .topnav{
+        margin: 16px auto 6px;
+        font-size:$font-size-title;
+        width: 100%;
+        height: 100%;
+        display:flex;
+        justify-content:left;
+        flex-direction: row;
+        border:none;
+
+        &_left{
+           margin-left: 16px;
+        }
+        
+        &_center{
+          position: absolute;
+          right: 50%;
+          transform: translate(50%,0%);
+        }
+    }
+
+  }
+
+  // nav div {
+  //   margin:0;
+  //   font-size:$font-size-title;
+  //   width: 100%;
+  //   height: 100%;
+  //   display:flex;
+  //   justify-content:center;
+  //   flex-direction: row;
+  //   border:none;
+  // }
+
+  .logo-title h1{
+    font-family: cursive;   
+     width: 100%;
+     text-align: center;
+     margin: 15% 0 15% 0;
+  }
+
+  .login-form{
+    display: flex;
+    flex-direction: column;
+    margin : 0 15% 0 15%;
+  }
+
+  .login-form .input-form{
+    margin: 5px 0 5px 0;
+  }
+
+  .input-form a{
+    float:right;
+    margin: 1% 0 5% 0;
+    font-size: 14px;
+    color: #0095f6;
+    color: rgba(var(--d69,0,149,246),1);
+  }
+
+  .login-form button{
+    color: #fff;
+    max-height: 28px;
+    padding: 5px 9px 5px 9px;
+    border-radius: 3px;
+    background-color: #0095f6;
+    background-color: rgba(var(--d69,0,149,246),1);
+    font-weight: bold;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+  }
+
+  .login-form .icon-fb{
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  .container-or{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 0px 15px 0px;
+  }
+
+  .container-or .line-or{
+    flex-grow: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+    background-color: rgba(var(--b38,219,219,219),1);
+    width: 100%;
+  }
+
+  .container-or .text-or{
+    margin: 0 5%;
+  }
+
+  .login-form .login-input{
+    background: #fafafa;
+    line-height: 18px;
+    padding: 9px 0 7px 8px;
+    text-overflow: ellipsis;
+    border: 1px solid #dbdbdb;
+    border: 1px solid rgba(var(--ca6,219,219,219),1);
+    border-radius: 3px;
+  }
+
+  .login-form .hasLength{
+    background-color: red;
+
+  }
+
+
+}
