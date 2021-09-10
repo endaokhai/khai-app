@@ -2,17 +2,20 @@ const express = require('express');
 const router = express.Router();
 var mysql = require('mysql');
 
-// Connection Function Start
-const conn = () => {
-    var connection = mysql.createConnection({
-        host: "localhost",
-        user: "root",
-        password: "",
-        database: "member"
-    });
-    return connection;
-}
-// Connection Function End
+var connection = mysql.createPool({
+  host: "us-cdbr-east-04.cleardb.com",
+  user: "b04dee5034141a",
+  password: "6d9edce4",
+  database: "heroku_cc96bf2c059530f"
+});
+
+var conn = connection;
+
+conn.getConnection((err, con) => {
+  if(err) throw err;
+  console.log('connected as id ' + con.threadId);
+});
+
 
 // Ajax Post Start
 router.post('/sample', function(req, res){
@@ -26,7 +29,7 @@ router.post('/sample', function(req, res){
   
     if(username != "" && title != "" && request_form != ""){
       var con = conn();
-  
+      var a = "asasd";
       // Insertion Start
       con.connect((err)=>{
           if(err) throw err;
